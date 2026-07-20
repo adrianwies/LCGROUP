@@ -543,5 +543,65 @@ function updateProductDots() {
   updateProductDots();
 }
 
+/* =========================
+   PRODUCTO DESTACADO
+========================= */
 
+const feature = document.querySelector(".catalog-feature");
+const featureImage = document.getElementById("catalog-feature-image");
+const featureBrand = document.getElementById("catalog-feature-brand");
+const featureTitle = document.getElementById("catalog-feature-title");
+const featureDescription = document.getElementById("catalog-feature-description");
+
+const productCards = document.querySelectorAll(".catalog-product-card");
+
+if (
+    feature &&
+    featureImage &&
+    featureBrand &&
+    featureTitle &&
+    featureDescription &&
+    productCards.length
+) {
+
+    productCards.forEach(card => {
+
+        card.addEventListener("click", () => {
+
+            /* Quitar selección anterior */
+            productCards.forEach(product => {
+                product.classList.remove("selected");
+            });
+
+            /* Seleccionar tarjeta */
+            card.classList.add("selected");
+
+            /* Animación */
+            featureImage.style.opacity = "0";
+
+            setTimeout(() => {
+
+                featureImage.src = card.dataset.featureImage;
+                featureImage.alt = card.dataset.featureTitle;
+
+                featureBrand.textContent =
+                    card.dataset.featureBrand;
+
+                featureTitle.textContent =
+                    card.dataset.featureTitle;
+
+                featureDescription.textContent =
+                    card.dataset.featureDescription;
+
+                feature.classList.add("product-selected");
+
+                featureImage.style.opacity = "1";
+
+            }, 180);
+
+        });
+
+    });
+
+}
 
