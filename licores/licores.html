@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylel.css" />
+    <link rel="stylesheet" href="../style.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300,0,0"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+</head>
+<body>
+    <div id="header-container"></div>
+
+<!-- =========================
+     PÁGINA DE LICORES
+========================= -->
+
+
+<main class="liquor-page">
+
+
+    <!-- =========================
+         HERO / PRESENTACIÓN
+    ========================= -->
+
+
+    <section class="liquor-hero">
+
+
+        <img
+            class="liquor-hero-image"
+            src="imagenes/banner-licores.jpg"
+            alt="Selección premium de licores"
+        >
+
+
+        <div class="liquor-hero-overlay"></div>
+
+
+        <div class="liquor-hero-content">
+
+
+            <nav class="liquor-breadcrumb" aria-label="Migas de pan">
+
+
+                <a href="index.html">
+                    Inicio
+                </a>
+
+
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+
+
+                <span>
+                    Licores
+                </span>
+
+
+            </nav>
+
+
+            <h1>Licores</h1>
+
+
+            <p>
+                Descubre nuestra selección de licores premium
+                de las mejores marcas del mundo.
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- =========================
+         CATÁLOGO
+    ========================= -->
+
+
+    <section class="liquor-catalog">
+
+
+        <!-- =========================
+             FILTROS LATERALES
+        ========================= -->
+
+
+        <aside class="catalog-sidebar">
+
+
+            <div class="catalog-sidebar-header">
+
+
+                <h2>Filtros</h2>
+
+
+                <button
+                    class="catalog-filter-close"
+                    type="button"
+                    aria-label="Cerrar filtros"
+                >
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+
+
+            </div>
+
+
+
+
+            <!-- CATEGORÍAS -->
+
+
+            <section class="filter-group">
+
+
+                <button
+                    class="filter-group-title"
+                    type="button"
+                    aria-expanded="true"
+                >
+                    <span>Categorías</span>
+
+
+                    <span class="material-symbols-outlined">
+                        remove
+                    </span>
+                </button>
+
+
+                <div class="filter-group-content">
+
+
+                    <label class="filter-option">
+
+
+                        <input
+                            type="checkbox"
+                            name="category"
+                            value="whisky"
+                        >
+
+
+                        <span>Whisky</span>
+
+
+                        <small>(42)</small>
+
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+
+                        <input
+                            type="checkbox"
+                            name="category"
+                            value="ron"
+                        >
+
+
+                        <span>Ron</span>
+
+
+                        <small>(38)</small>
+
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+
+                        <input
+                            type="checkbox"
+                            name="category"
+                            value="pisco"
+                        >
+
+
+                        <span>Pisco</span>
+
+
+                        <small>(24)</small>
+
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+
+                        <input
+                            type="checkbox"
+                            name="category"
+                            value="vodka"
+                        >
+
+
+                        <span>Vodka</span>
+
+
+                        <small>(18)</small>
+
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+
+                        <input
+                            type="checkbox"
+                            name="category"
+                            value="gin"
+                        >
+
+
+                        <span>Gin</span>
+
+
+                        <small>(15)</small>
+
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+
+                        <input
+                            type="checkbox"
+                            name="category"
+                            value="tequila"
+                        >
+
+
+                        <span>Tequila</span>
+
+
+                        <small>(12)</small>
+
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+
+                        <input
+                            type="checkbox"
+                            name="category"
+                            value="cremas"
+                        >
+
+
+                        <span>Licores y cremas</span>
+
+
+                        <small>(28)</small>
+
+
+                    </label>
+
+
+                    <button class="filter-show-more" type="button">
+                        Ver todos
+                    </button>
+
+
+                </div>
+
+
+            </section>
+
+
+
+
+            <!-- RANGO DE PRECIO -->
+
+
+            <section class="filter-group">
+
+
+                <button
+                    class="filter-group-title"
+                    type="button"
+                    aria-expanded="true"
+                >
+                    <span>Rango de precio</span>
+
+
+                    <span class="material-symbols-outlined">
+                        remove
+                    </span>
+                </button>
+
+
+                <div class="filter-group-content">
+
+
+                    <div class="price-range">
+
+
+                        <input
+                            type="range"
+                            min="20"
+                            max="1200"
+                            value="600"
+                            aria-label="Precio máximo"
+                        >
+
+
+                        <div class="price-range-values">
+
+
+                            <span>S/ 20</span>
+
+
+                            <span>S/ 1,200+</span>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+
+            <!-- MARCA -->
+
+
+            <section class="filter-group">
+
+
+                <button
+                    class="filter-group-title"
+                    type="button"
+                    aria-expanded="true"
+                >
+                    <span>Marca</span>
+
+
+                    <span class="material-symbols-outlined">
+                        remove
+                    </span>
+                </button>
+
+
+                <div class="filter-group-content">
+
+
+                    <label class="filter-search">
+
+
+                        <input
+                            type="search"
+                            placeholder="Buscar marca..."
+                            aria-label="Buscar marca"
+                        >
+
+
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+
+                        <input
+                            type="checkbox"
+                            name="brand"
+                            value="johnnie-walker"
+                        >
+
+
+                        <span>Johnnie Walker</span>
+
+
+                        <small>(8)</small>
+
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+
+                        <input
+                            type="checkbox"
+                            name="brand"
+                            value="bacardi"
+                        >
+
+
+                        <span>Bacardí</span>
+
+
+                        <small>(7)</small>
+
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+
+                        <input
+                            type="checkbox"
+                            name="brand"
+                            value="don-julio"
+                        >
+
+
+                        <span>Don Julio</span>
+
+
+                        <small>(6)</small>
+
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+
+                        <input
+                            type="checkbox"
+                            name="brand"
+                            value="hennessy"
+                        >
+
+
+                        <span>Hennessy</span>
+
+
+                        <small>(5)</small>
+
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+
+                        <input
+                            type="checkbox"
+                            name="brand"
+                            value="tanqueray"
+                        >
+
+
+                        <span>Tanqueray</span>
+
+
+                        <small>(4)</small>
+
+
+                    </label>
+
+
+                    <button class="filter-show-more" type="button">
+                        Ver más
+                    </button>
+
+
+                </div>
+
+
+            </section>
+
+
+
+
+            <!-- ORIGEN -->
+
+
+            <section class="filter-group">
+
+
+                <button
+                    class="filter-group-title"
+                    type="button"
+                    aria-expanded="true"
+                >
+                    <span>Origen</span>
+
+
+                    <span class="material-symbols-outlined">
+                        remove
+                    </span>
+                </button>
+
+
+                <div class="filter-group-content">
+
+
+                    <label class="filter-option">
+
+
+                        <input
+                            type="checkbox"
+                            name="origin"
+                            value="escocia"
+                        >
+
+
+                        <span>Escocia</span>
+
+
+                        <small>(25)</small>
+
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+
+                        <input
+                            type="checkbox"
+                            name="origin"
+                            value="peru"
+                        >
+
+
+                        <span>Perú</span>
+
+
+                        <small>(21)</small>
+
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+
+                        <input
+                            type="checkbox"
+                            name="origin"
+                            value="mexico"
+                        >
+
+
+                        <span>México</span>
+
+
+                        <small>(18)</small>
+
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+
+                        <input
+                            type="checkbox"
+                            name="origin"
+                            value="cuba"
+                        >
+
+
+                        <span>Cuba</span>
+
+
+                        <small>(15)</small>
+
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+
+                        <input
+                            type="checkbox"
+                            name="origin"
+                            value="francia"
+                        >
+
+
+                        <span>Francia</span>
+
+
+                        <small>(10)</small>
+
+
+                    </label>
+
+
+                    <button class="filter-show-more" type="button">
+                        Ver más
+                    </button>
+
+
+                </div>
+
+
+            </section>
+
+
+        </aside>
+
+
+
+
+        <!-- =========================
+             RESULTADOS
+        ========================= -->
+
+
+        <div class="catalog-results">
+
+
+            <!-- BARRA SUPERIOR -->
+
+
+            <div class="catalog-toolbar">
+
+
+                <div class="catalog-toolbar-left">
+
+
+                    <button
+                        class="catalog-filter-button"
+                        type="button"
+                    >
+                        <span class="material-symbols-outlined">
+                            tune
+                        </span>
+
+
+                        Filtros
+                    </button>
+
+
+                    <p>
+                        Mostrando 1–8 de 168 productos
+                    </p>
+
+
+                </div>
+
+
+                <div class="catalog-toolbar-right">
+
+
+                    <label class="catalog-sort">
+
+
+                        <span>Ordenar por:</span>
+
+
+                        <select aria-label="Ordenar productos">
+
+
+                            <option value="featured">
+                                Más vendidos
+                            </option>
+
+
+                            <option value="newest">
+                                Más recientes
+                            </option>
+
+
+                            <option value="price-low">
+                                Precio: menor a mayor
+                            </option>
+
+
+                            <option value="price-high">
+                                Precio: mayor a menor
+                            </option>
+
+
+                        </select>
+
+
+                    </label>
+
+
+                    <div class="catalog-view-options">
+
+
+                        <span>Ver:</span>
+
+
+                        <button
+                            class="catalog-view-button active"
+                            type="button"
+                            aria-label="Vista de cuadrícula"
+                        >
+                            <span class="material-symbols-outlined">
+                                grid_view
+                            </span>
+                        </button>
+
+
+                        <button
+                            class="catalog-view-button"
+                            type="button"
+                            aria-label="Vista de lista"
+                        >
+                            <span class="material-symbols-outlined">
+                                view_list
+                            </span>
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <!-- PRODUCTOS -->
+
+
+            <div class="liquor-product-grid">
+
+
+                <!-- PRODUCTO 1 -->
+
+
+                <article class="liquor-product-card">
+
+
+                    <span class="product-discount">
+                        -10%
+                    </span>
+
+
+                    <button
+                        class="product-favorite"
+                        type="button"
+                        aria-label="Agregar Johnnie Walker a favoritos"
+                    >
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                    </button>
+
+
+                    <a
+                        href="#"
+                        class="product-image-link"
+                        aria-label="Ver Johnnie Walker Blue Label"
+                    >
+                        <img
+                            src="imagenes/johnnie-walker-blue-label.png"
+                            alt="Johnnie Walker Blue Label 750 ml"
+                        >
+                    </a>
+
+
+                    <div class="product-card-content">
+
+
+                        <span class="product-brand">
+                            Johnnie Walker
+                        </span>
+
+
+                        <h3>
+                            <a href="#">
+                                Blue Label 750 ml
+                            </a>
+                        </h3>
+
+
+                        <div class="product-card-footer">
+
+
+                            <div class="product-price">
+
+
+                                <del>S/ 799.00</del>
+
+
+                                <strong>S/ 699.00</strong>
+
+
+                            </div>
+
+
+                            <button
+                                class="product-detail-button"
+                                type="button"
+                                aria-label="Ver detalles del producto"
+                            >
+                                <span class="material-symbols-outlined">
+                                    visibility
+                                </span>
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+
+                <!-- PRODUCTO 2 -->
+
+
+                <article class="liquor-product-card">
+
+
+                    <button
+                        class="product-favorite"
+                        type="button"
+                        aria-label="Agregar Hennessy XO a favoritos"
+                    >
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                    </button>
+
+
+                    <a
+                        href="#"
+                        class="product-image-link"
+                        aria-label="Ver Hennessy XO"
+                    >
+                        <img
+                            src="imagenes/hennessy-xo.png"
+                            alt="Hennessy XO Cognac 700 ml"
+                        >
+                    </a>
+
+
+                    <div class="product-card-content">
+
+
+                        <span class="product-brand">
+                            Hennessy
+                        </span>
+
+
+                        <h3>
+                            <a href="#">
+                                XO Cognac 700 ml
+                            </a>
+                        </h3>
+
+
+                        <div class="product-card-footer">
+
+
+                            <div class="product-price">
+                                <strong>S/ 719.10</strong>
+                            </div>
+
+
+                            <button
+                                class="product-detail-button"
+                                type="button"
+                                aria-label="Ver detalles del producto"
+                            >
+                                <span class="material-symbols-outlined">
+                                    visibility
+                                </span>
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+
+                <!-- PRODUCTO 3 -->
+
+
+                <article class="liquor-product-card">
+
+
+                    <button
+                        class="product-favorite"
+                        type="button"
+                        aria-label="Agregar Bacardí Carta Blanca a favoritos"
+                    >
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                    </button>
+
+
+                    <a
+                        href="#"
+                        class="product-image-link"
+                        aria-label="Ver Bacardí Carta Blanca"
+                    >
+                        <img
+                            src="imagenes/bacardi-carta-blanca.png"
+                            alt="Bacardí Carta Blanca Ron 750 ml"
+                        >
+                    </a>
+
+
+                    <div class="product-card-content">
+
+
+                        <span class="product-brand">
+                            Bacardí
+                        </span>
+
+
+                        <h3>
+                            <a href="#">
+                                Carta Blanca Ron 750 ml
+                            </a>
+                        </h3>
+
+
+                        <div class="product-card-footer">
+
+
+                            <div class="product-price">
+                                <strong>S/ 65.00</strong>
+                            </div>
+
+
+                            <button
+                                class="product-detail-button"
+                                type="button"
+                                aria-label="Ver detalles del producto"
+                            >
+                                <span class="material-symbols-outlined">
+                                    visibility
+                                </span>
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+
+                <!-- PRODUCTO 4 -->
+
+
+                <article class="liquor-product-card">
+
+
+                    <button
+                        class="product-favorite"
+                        type="button"
+                        aria-label="Agregar Tanqueray a favoritos"
+                    >
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                    </button>
+
+
+                    <a
+                        href="#"
+                        class="product-image-link"
+                        aria-label="Ver Tanqueray London Dry"
+                    >
+                        <img
+                            src="imagenes/tanqueray-london-dry.png"
+                            alt="Tanqueray London Dry Gin 750 ml"
+                        >
+                    </a>
+
+
+                    <div class="product-card-content">
+
+
+                        <span class="product-brand">
+                            Tanqueray
+                        </span>
+
+
+                        <h3>
+                            <a href="#">
+                                London Dry Gin 750 ml
+                            </a>
+                        </h3>
+
+
+                        <div class="product-card-footer">
+
+
+                            <div class="product-price">
+                                <strong>S/ 89.00</strong>
+                            </div>
+
+
+                            <button
+                                class="product-detail-button"
+                                type="button"
+                                aria-label="Ver detalles del producto"
+                            >
+                                <span class="material-symbols-outlined">
+                                    visibility
+                                </span>
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+
+                <!-- PRODUCTO 5 -->
+
+
+                <article class="liquor-product-card">
+
+
+                    <button
+                        class="product-favorite"
+                        type="button"
+                        aria-label="Agregar Don Julio 1942 a favoritos"
+                    >
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                    </button>
+
+
+                    <a
+                        href="#"
+                        class="product-image-link"
+                        aria-label="Ver Don Julio 1942"
+                    >
+                        <img
+                            src="imagenes/don-julio-1942.png"
+                            alt="Don Julio 1942 Tequila Añejo 750 ml"
+                        >
+                    </a>
+
+
+                    <div class="product-card-content">
+
+
+                        <span class="product-brand">
+                            Don Julio
+                        </span>
+
+
+                        <h3>
+                            <a href="#">
+                                1942 Tequila Añejo 750 ml
+                            </a>
+                        </h3>
+
+
+                        <div class="product-card-footer">
+
+
+                            <div class="product-price">
+                                <strong>S/ 899.00</strong>
+                            </div>
+
+
+                            <button
+                                class="product-detail-button"
+                                type="button"
+                                aria-label="Ver detalles del producto"
+                            >
+                                <span class="material-symbols-outlined">
+                                    visibility
+                                </span>
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+
+                <!-- PRODUCTO 6 -->
+
+
+                <article class="liquor-product-card">
+
+
+                    <button
+                        class="product-favorite"
+                        type="button"
+                        aria-label="Agregar Absolut Vodka a favoritos"
+                    >
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                    </button>
+
+
+                    <a
+                        href="#"
+                        class="product-image-link"
+                        aria-label="Ver Absolut Vodka"
+                    >
+                        <img
+                            src="imagenes/absolut-vodka.png"
+                            alt="Absolut Vodka 750 ml"
+                        >
+                    </a>
+
+
+                    <div class="product-card-content">
+
+
+                        <span class="product-brand">
+                            Absolut
+                        </span>
+
+
+                        <h3>
+                            <a href="#">
+                                Vodka 750 ml
+                            </a>
+                        </h3>
+
+
+                        <div class="product-card-footer">
+
+
+                            <div class="product-price">
+                                <strong>S/ 59.00</strong>
+                            </div>
+
+
+                            <button
+                                class="product-detail-button"
+                                type="button"
+                                aria-label="Ver detalles del producto"
+                            >
+                                <span class="material-symbols-outlined">
+                                    visibility
+                                </span>
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+
+                <!-- PRODUCTO 7 -->
+
+
+                <article class="liquor-product-card">
+
+
+                    <button
+                        class="product-favorite"
+                        type="button"
+                        aria-label="Agregar Chivas Regal a favoritos"
+                    >
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                    </button>
+
+
+                    <a
+                        href="#"
+                        class="product-image-link"
+                        aria-label="Ver Chivas Regal 18 años"
+                    >
+                        <img
+                            src="imagenes/chivas-regal-18.png"
+                            alt="Chivas Regal 18 años Whisky 750 ml"
+                        >
+                    </a>
+
+
+                    <div class="product-card-content">
+
+
+                        <span class="product-brand">
+                            Chivas Regal
+                        </span>
+
+
+                        <h3>
+                            <a href="#">
+                                18 años Whisky 750 ml
+                            </a>
+                        </h3>
+
+
+                        <div class="product-card-footer">
+
+
+                            <div class="product-price">
+                                <strong>S/ 299.00</strong>
+                            </div>
+
+
+                            <button
+                                class="product-detail-button"
+                                type="button"
+                                aria-label="Ver detalles del producto"
+                            >
+                                <span class="material-symbols-outlined">
+                                    visibility
+                                </span>
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+
+                <!-- PRODUCTO 8 -->
+
+
+                <article class="liquor-product-card">
+
+
+                    <button
+                        class="product-favorite"
+                        type="button"
+                        aria-label="Agregar Zacapa 23 a favoritos"
+                    >
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                    </button>
+
+
+                    <a
+                        href="#"
+                        class="product-image-link"
+                        aria-label="Ver Zacapa 23"
+                    >
+                        <img
+                            src="imagenes/zacapa-23.png"
+                            alt="Zacapa 23 Ron 750 ml"
+                        >
+                    </a>
+
+
+                    <div class="product-card-content">
+
+
+                        <span class="product-brand">
+                            Zacapa
+                        </span>
+
+
+                        <h3>
+                            <a href="#">
+                                23 Ron 750 ml
+                            </a>
+                        </h3>
+
+
+                        <div class="product-card-footer">
+
+
+                            <div class="product-price">
+                                <strong>S/ 199.00</strong>
+                            </div>
+
+
+                            <button
+                                class="product-detail-button"
+                                type="button"
+                                aria-label="Ver detalles del producto"
+                            >
+                                <span class="material-symbols-outlined">
+                                    visibility
+                                </span>
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+            </div>
+
+
+
+
+            <!-- PAGINACIÓN -->
+
+
+            <nav
+                class="catalog-pagination"
+                aria-label="Paginación del catálogo"
+            >
+
+
+                <button
+                    class="pagination-button active"
+                    type="button"
+                    aria-current="page"
+                >
+                    1
+                </button>
+
+
+                <button
+                    class="pagination-button"
+                    type="button"
+                >
+                    2
+                </button>
+
+
+                <button
+                    class="pagination-button"
+                    type="button"
+                >
+                    3
+                </button>
+
+
+                <span class="pagination-dots">
+                    …
+                </span>
+
+
+                <button
+                    class="pagination-button"
+                    type="button"
+                >
+                    11
+                </button>
+
+
+                <button
+                    class="pagination-button pagination-next"
+                    type="button"
+                    aria-label="Página siguiente"
+                >
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </button>
+
+
+            </nav>
+
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+
+
+
+    
+    <div id="footer-container"></div>
+ <script src="script.js"></script>
+</body>
+</html>

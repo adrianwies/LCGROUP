@@ -10,9 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300,0,0"
     />
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    >
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <link
       rel="stylesheet"
@@ -25,45 +25,9 @@
     />
   </head>
   <body>
-    <!-- =========================
-     HEADER
-    ========================= -->
+    <div id="header-container"></div>
 
-    <header class="header">
-      <!-- TOP HEADER -->
-      <div class="header-top">
-        <!-- LOGO -->
-        <div class="logo">
-          <img src="imagenes/LOGO.jpg" alt="LC GROUP" />
-        </div>
 
-        <!-- SEARCH -->
-        <div class="search">
-          <button>
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-
-          <input type="text" placeholder="Buscar productos..." />
-        </div>
-      </div>
-
-      <!-- NAV -->
-      <nav class="nav">
-        <a href="#" class="active">Inicio</a>
-
-        <a href="#">Licores</a>
-
-        <a href="#">Artículos de limpieza</a>
-
-        <a href="#">Conservas</a>
-
-        <a href="#">Cristalería</a>
-
-        <a href="#">Nosotros</a>
-
-        <a href="#">Contacto</a>
-      </nav>
-    </header>
 
     <section class="hero">
       <div class="slider">
@@ -316,46 +280,30 @@
 
       <!-- COLUMNA CENTRAL: IMAGEN DESTACADA -->
       <div class="catalog-feature product-selected">
-  <img
-    id="catalog-feature-image"
-    src="imagenes/EGGRMALBEC.png"
-    alt="Gran Reserva Malbec"
-  />
+        <img
+          id="catalog-feature-image"
+          src="imagenes/EGGRMALBEC.png"
+          alt="Gran Reserva Malbec"
+        />
 
+        <div class="catalog-feature-overlay" id="catalog-feature-content">
+          <span class="catalog-feature-brand" id="catalog-feature-brand">
+            ESCORIHUELA GASCON
+          </span>
 
-  <div
-    class="catalog-feature-overlay"
-    id="catalog-feature-content"
-  >
-    <span
-      class="catalog-feature-brand"
-      id="catalog-feature-brand"
-    >
-      ESCORIHUELA GASCON
-    </span>
+          <h3 class="catalog-feature-title" id="catalog-feature-title">
+            Gran Reserva Malbec
+          </h3>
 
-
-    <h3
-      class="catalog-feature-title"
-      id="catalog-feature-title"
-    >
-      Gran Reserva Malbec
-    </h3>
-
-
-    <p
-      class="catalog-feature-description"
-      id="catalog-feature-description"
-    >
-      Malbec argentino de gran estructura, con aromas de frutas negras,
-      notas especiadas y un final elegante.
-    </p>
-  </div>
-</div>
-
-
-
-
+          <p
+            class="catalog-feature-description"
+            id="catalog-feature-description"
+          >
+            Malbec argentino de gran estructura, con aromas de frutas negras,
+            notas especiadas y un final elegante.
+          </p>
+        </div>
+      </div>
 
       <!-- COLUMNA DERECHA: PRODUCTOS -->
       <div class="catalog-products">
@@ -634,588 +582,81 @@
       </div>
     </section>
 
-<!-- =========================
+    <!-- =========================
      BANNERS PROMOCIONALES
 ========================= -->
 
-
-<section class="promo-banners">
-
-
-    <article class="promo-banner">
-
-
-        <img src="imagenes/19 PROMO BANER.jpg" alt="Vodka">
-
+    <section class="promo-banners">
+      <article class="promo-banner">
+        <img src="imagenes/19 PROMO BANER.jpg" alt="Vodka" />
 
         <div class="promo-content">
+          <span class="promo-subtitle"> COLECCIÓN ESPECIAL </span>
 
+          <h3>Refresca tus momentos</h3>
 
-            <span class="promo-subtitle">
-                COLECCIÓN ESPECIAL
-            </span>
+          <p>
+            Descubre una selección premium ideal para compartir en cualquier
+            ocasión.
+          </p>
 
-
-            <h3>
-                Refresca tus momentos
-            </h3>
-
-
-            <p>
-                Descubre una selección premium ideal para compartir en cualquier ocasión.
-            </p>
-
-
-            <a href="#">
-                Ver productos
-            </a>
-
-
+          <a href="#"> Ver productos </a>
         </div>
+      </article>
 
-
-    </article>
-
-
-    <article class="promo-banner">
-
-
-        <img src="imagenes/centenario promo.jpg" alt="Gin">
-
+      <article class="promo-banner">
+        <img src="imagenes/centenario promo.jpg" alt="Gin" />
 
         <div class="promo-content">
+          <span class="promo-subtitle"> NUEVAS ETIQUETAS </span>
 
+          <h3>El sabor del Gin</h3>
 
-            <span class="promo-subtitle">
-                NUEVAS ETIQUETAS
-            </span>
+          <p>
+            Aromas botánicos cuidadosamente seleccionados para una experiencia
+            única.
+          </p>
 
-
-            <h3>
-                El sabor del Gin
-            </h3>
-
-
-            <p>
-                Aromas botánicos cuidadosamente seleccionados para una experiencia única.
-            </p>
-
-
-            <a href="#">
-                Descubrir
-            </a>
-
-
+          <a href="#"> Descubrir </a>
         </div>
+      </article>
 
-
-    </article>
-
-
-    <article class="promo-banner">
-
-
-        <img src="imagenes/negro promo.jpg" alt="Vodka">
-
+      <article class="promo-banner">
+        <img src="imagenes/negro promo.jpg" alt="Vodka" />
 
         <div class="promo-content">
+          <span class="promo-subtitle"> EDICIÓN PREMIUM </span>
 
+          <h3>Calidad excepcional</h3>
 
-            <span class="promo-subtitle">
-                EDICIÓN PREMIUM
-            </span>
+          <p>
+            Productos elaborados para quienes buscan un sabor auténtico y
+            sofisticado.
+          </p>
 
-
-            <h3>
-                Calidad excepcional
-            </h3>
-
-
-            <p>
-                Productos elaborados para quienes buscan un sabor auténtico y sofisticado.
-            </p>
-
-
-            <a href="#">
-                Conocer más
-            </a>
-
-
+          <a href="#"> Conocer más </a>
         </div>
+      </article>
 
-
-    </article>
-
-
-    <article class="promo-banner">
-
-
-        <img src="imagenes/elefant promo.jpg" alt="Whisky">
-
+      <article class="promo-banner">
+        <img src="imagenes/elefant promo.jpg" alt="Whisky" />
 
         <div class="promo-content">
+          <span class="promo-subtitle"> EXPERIENCIA ÚNICA </span>
 
+          <h3>Tradición que inspira</h3>
 
-            <span class="promo-subtitle">
-                EXPERIENCIA ÚNICA
-            </span>
+          <p>
+            Encuentra bebidas cuidadosamente seleccionadas para cada
+            celebración.
+          </p>
 
-
-            <h3>
-                Tradición que inspira
-            </h3>
-
-
-            <p>
-                Encuentra bebidas cuidadosamente seleccionadas para cada celebración.
-            </p>
-
-
-            <a href="#">
-                Explorar
-            </a>
-
-
+          <a href="#"> Explorar </a>
         </div>
+      </article>
+    </section>
 
-
-    </article>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- =========================
-     FRANJA DE ADVERTENCIA
-========================= -->
-
-
-<section class="footer-warning">
-
-
-    <div class="container footer-warning-content">
-
-
-        <div class="footer-warning-age">
-            18+
-        </div>
-
-
-        <span class="footer-warning-divider"></span>
-
-
-        <p>
-            TOMAR BEBIDAS ALCOHÓLICAS EN EXCESO ES DAÑINO
-        </p>
-
-
-        <div class="footer-warning-icons">
-
-
-            <span class="footer-warning-icon">
-                <span class="material-symbols-outlined">
-                    pregnant_woman
-                </span>
-            </span>
-
-
-            <span class="footer-warning-icon">
-                <span class="material-symbols-outlined">
-                    local_bar
-                </span>
-            </span>
-
-
-            <span class="footer-warning-icon">
-                <span class="material-symbols-outlined">
-                    directions_car
-                </span>
-            </span>
-
-
-        </div>
-
-
-    </div>
-
-
-</section>
-
-
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-
-<footer class="footer">
-
-
-    <div class="container footer-grid">
-
-
-        <!-- EMPRESA -->
-
-
-        <div class="footer-company">
-
-
-            <img
-                class="footer-logo"
-                src="imagenes/logofoter.png"
-                alt="LC Group"
-            >
-
-
-            <p>
-                Somos una empresa dedicada a la comercialización de licores,
-                artículos de limpieza, conservas y cristalería de las mejores marcas.
-            </p>
-
-
-           <div class="footer-socials">
-
-
-    <a
-        href="#"
-        aria-label="Visitar Facebook"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-    </a>
-
-
-    <a
-        href="#"
-        aria-label="Visitar Instagram"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-    </a>
-
-
-</div>
-
-
-
-
-        </div>
-
-
-
-
-        <!-- ENLACES -->
-
-
-        <div class="footer-column">
-
-
-            <h3>
-                Enlaces rápidos
-            </h3>
-
-
-            <ul>
-
-
-                <li>
-                    <a href="#">
-                        Inicio
-                        <span>›</span>
-                    </a>
-                </li>
-
-
-                
-
-
-                <li>
-                    <a href="#">
-                        Nosotros
-                        <span>›</span>
-                    </a>
-                </li>
-
-
-                <li>
-                    <a href="#">
-                        Contacto
-                        <span>›</span>
-                    </a>
-                </li>
-
-
-            </ul>
-
-
-        </div>
-
-
-
-
-        <!-- CATEGORÍAS -->
-
-
-        <div class="footer-column">
-
-
-            <h3>
-                Categorías
-            </h3>
-
-
-            <ul class="footer-category-list">
-
-
-                <li>
-                    <span class="material-symbols-outlined">
-                        liquor
-                    </span>
-
-
-                    <a href="#">
-                        Licores
-                    </a>
-                </li>
-
-
-                <li>
-                    <span class="material-symbols-outlined">
-                        cleaning_services
-                    </span>
-
-
-                    <a href="#">
-                        Artículos de limpieza
-                    </a>
-                </li>
-
-
-                <li>
-                    <span class="material-symbols-outlined">
-                        inventory_2
-                    </span>
-
-
-                    <a href="#">
-                        Conservas
-                    </a>
-                </li>
-
-
-                <li>
-                    <span class="material-symbols-outlined">
-                        wine_bar
-                    </span>
-
-
-                    <a href="#">
-                        Cristalería
-                    </a>
-                </li>
-
-
-            </ul>
-
-
-        </div>
-
-
-
-
-        <!-- ATENCIÓN AL CLIENTE -->
-
-
-        <div class="footer-column">
-
-
-            <h3>
-                Atención al cliente
-            </h3>
-
-
-            <ul class="footer-contact-list">
-
-
-                <li>
-
-
-                    <span class="material-symbols-outlined">
-                        call
-                    </span>
-
-
-                    <a href="tel:+51999123456">
-                        +51 999 123 456
-                    </a>
-
-
-                </li>
-
-
-                <li>
-
-
-                    <span class="material-symbols-outlined">
-                        mail
-                    </span>
-
-
-                    <a href="mailto:hola@lcgroup.com.pe">
-                        hola@lcgroup.com.pe
-                    </a>
-
-
-                </li>
-
-
-                <li>
-
-
-                    <span class="material-symbols-outlined">
-                        location_on
-                    </span>
-
-
-                    <span>
-                        Lima, Perú
-                    </span>
-
-
-                </li>
-
-
-                <li>
-
-
-                    <span class="material-symbols-outlined">
-                        schedule
-                    </span>
-
-
-                    <span>
-                        Lunes a sábado<br>
-                        9:00 a.m. - 6:00 p.m.
-                    </span>
-
-
-                </li>
-
-
-            </ul>
-
-
-        </div>
-
-
-
-
-        <!-- MARCAS -->
-
-
-        <div class="footer-column footer-information">
-
-
-    <h3>
-        Información
-    </h3>
-
-
-    <ul class="footer-information-list">
-
-
-        <li>
-            <a href="#">
-                Términos y condiciones
-            </a>
-        </li>
-
-
-        <li>
-            <a href="#">
-                Política de privacidad
-            </a>
-        </li>
-
-
-        <li>
-            <a href="#">
-                Métodos de pago
-            </a>
-        </li>
-
-
-        <li>
-            <a href="#">
-                Envíos y devoluciones
-            </a>
-        </li>
-
-
-        <li>
-            <a href="#">
-                Preguntas frecuentes
-            </a>
-        </li>
-
-
-    </ul>
-
-
-</div>
-
-
-
-
-
-
-    </div>
-
-
-
-
-    <!-- FOOTER INFERIOR -->
-
-
-    <div class="footer-bottom">
-
-
-        <div class="container footer-bottom-content">
-
-
-            <p>
-                © 2026 LC Group. Todos los derechos reservados.
-            </p>
-
-
-            
-
-        </div>
-
-
-    </div>
-
-
-</footer>
-
-
+    <div id="footer-container"></div>
 
 
 
