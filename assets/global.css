@@ -1,18 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@300;400;500;600;700&display=swap");
 
 /* =========================
-   FUENTE FUTURA
-========================= */
-
-@font-face {
-  font-family: "Futura-light-bt";
-  src: url("fonts/FuturaBT-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* =========================
    VARIABLES GLOBALES
 ========================= */
 
